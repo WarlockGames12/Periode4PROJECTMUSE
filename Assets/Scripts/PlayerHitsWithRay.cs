@@ -76,7 +76,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 Debug.ClearDeveloperConsole();
                 if (hit.collider.CompareTag("Bendable") && !isRotated0)
                 {
-                    Bendables[0].transform.Rotate(0, 0, 90);
+                    Bendables[0].transform.Rotate(0, 90, 0);
                     Debug.Log(Bendables[0].transform.localEulerAngles);
                     if (Bendables[0].transform.localEulerAngles.y == 0)
                     {
@@ -87,7 +87,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 }
                 if (hit.collider.CompareTag("Bendable1") && !isRotated1)
                 {
-                    Bendables[1].transform.Rotate(0, 0, 90);
+                    Bendables[1].transform.Rotate(0, 90, 0);
                     Debug.Log(Bendables[1].transform.localEulerAngles);
                     if (Bendables[1].transform.localEulerAngles.y == 270 || Bendables[1].transform.localEulerAngles.y == -90)
                     {
@@ -98,7 +98,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 }
                 if (hit.collider.CompareTag("Bendable2") && !isRotated2)
                 {
-                    Bendables[2].transform.Rotate(0, 0, 90);
+                    Bendables[2].transform.Rotate(0, 90, 0);
                     Debug.Log(Bendables[2].transform.localEulerAngles);
                     if (Bendables[2].transform.localEulerAngles.y == 180 || Bendables[2].transform.localEulerAngles.y == -180)
                     {
@@ -109,7 +109,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 }
                 if (hit.collider.CompareTag("Bendable3") && !isRotated3)
                 {
-                    Bendables[3].transform.Rotate(0, 0, 90);
+                    Bendables[3].transform.Rotate(0, 90, 0);
                     Debug.Log(Bendables[3].transform.localEulerAngles);
                     if (Bendables[3].transform.localEulerAngles.y == 90 || Bendables[3].transform.localEulerAngles.y == -270)
                     {
@@ -120,7 +120,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 }
                 if (hit.collider.CompareTag("Bendable4") && !isRotated4)
                 {
-                    Bendables[4].transform.Rotate(0, 0, 90);
+                    Bendables[4].transform.Rotate(0, 90,0);
                     Debug.Log(Bendables[4].transform.localEulerAngles);
                     if (Bendables[4].transform.localEulerAngles.y == 90 || Bendables[4].transform.localEulerAngles.y == -270)
                     {
@@ -131,7 +131,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 }
                 if (hit.collider.CompareTag("Bendable5") && !isRotated5)
                 {
-                    Bendables[5].transform.Rotate(0, 0, 90);
+                    Bendables[5].transform.Rotate(0, 90, 0);
                     Debug.Log(Bendables[5].transform.localEulerAngles);
                     if (Bendables[5].transform.localEulerAngles.y == 270 || Bendables[5].transform.localEulerAngles.y == -90)
                     {
