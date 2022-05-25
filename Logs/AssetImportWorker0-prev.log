@@ -1,0 +1,300 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19044.1706; Version 2009; 64bit' Language: 'nl' Physical Memory: 16272 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/awesome/ProjectMuse
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63601
+Successfully changed project path to: D:/awesome/ProjectMuse
+D:/awesome/ProjectMuse
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 28.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/awesome/ProjectMuse/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   
+    VRAM:     4018 MB
+    Driver:   30.0.15.1179
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002911 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 28.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002573 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1511 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.1 MB.
+System memory in use after: 68.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1948.
+Total: 2.200900 ms (FindLiveObjects: 0.169500 ms CreateObjectMapping: 0.060000 ms MarkObjects: 1.906100 ms  DeleteObjects: 0.063800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_Normal.png
+  artifactKey: Guid(769bed6aa6466ee41868bd09738b9893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_Normal.png using Guid(769bed6aa6466ee41868bd09738b9893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16147bc6d2a670aa0de4884b6a649f2c') in 0.063519 seconds
+  Import took 0.065800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png
+  artifactKey: Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png using Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc259aa2ff9bfaf8c78fec47e9a428d') in 0.010921 seconds
+  Import took 0.059611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001153 seconds.
+  path: Assets/Textures/Pole Edges
+  artifactKey: Guid(e182697393b545a41a2f72f89e5e5d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges using Guid(e182697393b545a41a2f72f89e5e5d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9317f60fc5fcfb7c145015d9b22422') in 0.002825 seconds
+  Import took 0.007032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000473 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_MaskMap.png
+  artifactKey: Guid(be9fd098c97272e4288a69222f3ef064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_MaskMap.png using Guid(be9fd098c97272e4288a69222f3ef064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe143c865b793f91b75022b3dd9807e7') in 0.021679 seconds
+  Import took 0.023877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.183220 seconds.
+  path: Assets/Textures/Pole Edges/PoleTexture.mat
+  artifactKey: Guid(5c53113327212b2489a6d45dbbeacd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PoleTexture.mat using Guid(5c53113327212b2489a6d45dbbeacd98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fdfdb5abc172da8d55309bcc803151d') in 0.069605 seconds
+  Import took 0.082674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.349616 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png
+  artifactKey: Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png using Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739a47028b1f703ede6e91d5f6f03067') in 0.038776 seconds
+  Import took 0.049928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.355756 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png
+  artifactKey: Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png using Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098e89f8c5fbb2c809f62375b4b657fa') in 0.009272 seconds
+  Import took 0.011836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.128518 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png
+  artifactKey: Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png using Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecef7f7b8af84d10c158a7b12de02c0') in 0.016501 seconds
+  Import took 0.019083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.921781 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png
+  artifactKey: Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.png using Guid(be2f599e7c59d4c4e9da7ffbd4dba15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ca481dce31a1fb44c6a4a6296e4f99') in 0.010484 seconds
+  Import took 0.013406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.655031 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(077a7101a04fdac41a68b48b1496d334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(077a7101a04fdac41a68b48b1496d334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d07bc0a3c4827b27e516f72f9d23ee') in 0.002642 seconds
+  Import took 0.005464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.993112 seconds.
+  path: Assets/Textures/Pole Edges/Materials
+  artifactKey: Guid(b11c7cedf603dec4aaadb765be1f0056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/Materials using Guid(b11c7cedf603dec4aaadb765be1f0056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e6b81b212d04c95a7cd7ff2a24ee0a') in 0.002909 seconds
+  Import took 0.005790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046826 seconds.
+  path: Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.mat
+  artifactKey: Guid(39e15c3872fb3764e866f08b360874a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.mat using Guid(39e15c3872fb3764e866f08b360874a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cef1793b19a815e9bf7a06be86a9e60') in 0.021948 seconds
+  Import took 0.024897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.165550 seconds.
+  path: Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_MaskMap.mat
+  artifactKey: Guid(fb1ad57fbe9eff84c93cb5f8b16543c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_MaskMap.mat using Guid(fb1ad57fbe9eff84c93cb5f8b16543c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e83d5bd9a530a8ac0c9d897ec1bda91') in 0.020978 seconds
+  Import took 0.023510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_Normal.mat
+  artifactKey: Guid(c42917180c66a8542a91ed8240acb5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_Normal.mat using Guid(c42917180c66a8542a91ed8240acb5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b569ab1eaccbb1fa93803a65e601db') in 0.012102 seconds
+  Import took 0.014432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.388486 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.tx
+  artifactKey: Guid(4d028194fb16927429f11a8584bda040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.tx using Guid(4d028194fb16927429f11a8584bda040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbb3d188a947d90b0e313e064792b6b') in 0.006185 seconds
+  Import took 0.009154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001914 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.tx
+  artifactKey: Guid(4d028194fb16927429f11a8584bda040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.tx using Guid(4d028194fb16927429f11a8584bda040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dbb3d188a947d90b0e313e064792b6b') in 0.002148 seconds
+  Import took 0.004497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.453924 seconds.
+  path: Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_BaseMap.png
+  artifactKey: Guid(839c2c027d93a874884a537e2e5e0c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_BaseMap.png using Guid(839c2c027d93a874884a537e2e5e0c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100996b613668c14b96714fe4091c7ce') in 0.009826 seconds
+  Import took 0.012481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_Normal.png
+  artifactKey: Guid(d61e51f70fc1157428d24434a182aa83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_Normal.png using Guid(d61e51f70fc1157428d24434a182aa83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003e73970a9ea5114787b47b7bdd1d7b') in 0.008417 seconds
+  Import took 0.010950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_MaskMap.png
+  artifactKey: Guid(d9a2c6070e1152849a92e7a26d82a37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_MaskMap.png using Guid(d9a2c6070e1152849a92e7a26d82a37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63e66f6b4b2c9e9ec1e37992ea9cf4f') in 0.011317 seconds
+  Import took 0.013813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.658361 seconds.
+  path: Assets/Textures/Platform/Materials/PROTOTYPE_platform_initialShadingGroup_BaseMap.mat
+  artifactKey: Guid(42111d371001c6a46bc968e718679a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/Materials/PROTOTYPE_platform_initialShadingGroup_BaseMap.mat using Guid(42111d371001c6a46bc968e718679a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a0d0164ea38536e449d19a2f660a6f') in 0.010423 seconds
+  Import took 0.012903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Textures/Platform/Materials/PROTOTYPE_platform_initialShadingGroup_MaskMap.mat
+  artifactKey: Guid(a50b42f887add754f9f18d8e0a40633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/Materials/PROTOTYPE_platform_initialShadingGroup_MaskMap.mat using Guid(a50b42f887add754f9f18d8e0a40633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3a7a44dc0fb8ff347e3b24ecf0b65c') in 0.012138 seconds
+  Import took 0.055187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000459 seconds.
+  path: Assets/Textures/Platform/Materials/PROTOTYPE_platform_initialShadingGroup_Normal.mat
+  artifactKey: Guid(95ae23d63db0b5d45827416438b8213a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/Materials/PROTOTYPE_platform_initialShadingGroup_Normal.mat using Guid(95ae23d63db0b5d45827416438b8213a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e8478ef0446e4f476a58672f3ab0f0') in 0.011298 seconds
+  Import took 0.013984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 228.542980 seconds.
+  path: Assets/Textures/Platform/Materials
+  artifactKey: Guid(c40ce29a4f9629c41ac17b318f1f6b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/Materials using Guid(c40ce29a4f9629c41ac17b318f1f6b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e13eee1cfb4495723ed37853206463') in 0.002370 seconds
+  Import took 0.005831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.772728 seconds.
+  path: Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_Normal.png
+  artifactKey: Guid(d61e51f70fc1157428d24434a182aa83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_Normal.png using Guid(d61e51f70fc1157428d24434a182aa83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b25d2cc90f178d2e374a312cbbc063') in 0.026949 seconds
+  Import took 0.029540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.500785 seconds.
+  path: Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_Normal.png
+  artifactKey: Guid(d61e51f70fc1157428d24434a182aa83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_Normal.png using Guid(d61e51f70fc1157428d24434a182aa83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbbb2a15b55774ed6e4136dcd19f9c94') in 0.015310 seconds
+  Import took 0.017796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.133220 seconds.
+  path: Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_MaskMap.png
+  artifactKey: Guid(d9a2c6070e1152849a92e7a26d82a37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Platform/PROTOTYPE_platform_initialShadingGroup_MaskMap.png using Guid(d9a2c6070e1152849a92e7a26d82a37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3354637a388713de0a04fe5f81f1823') in 0.020928 seconds
+  Import took 0.024524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.715885 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_MaskMap.png
+  artifactKey: Guid(be9fd098c97272e4288a69222f3ef064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_MaskMap.png using Guid(be9fd098c97272e4288a69222f3ef064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cadd0dfdeac98757c69b7bc79ce56d8') in 0.013300 seconds
+  Import took 0.016466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.999950 seconds.
+  path: Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_Normal.png
+  artifactKey: Guid(769bed6aa6466ee41868bd09738b9893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/PROTOTYPE_pole_edge_initialShadingGroup_Normal.png using Guid(769bed6aa6466ee41868bd09738b9893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3c86d4c42c78e52d353c31ec646738') in 0.012254 seconds
+  Import took 0.014756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 497.438561 seconds.
+  path: Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.mat
+  artifactKey: Guid(39e15c3872fb3764e866f08b360874a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Pole Edges/Materials/PROTOTYPE_pole_edge_initialShadingGroup_BaseMap.mat using Guid(39e15c3872fb3764e866f08b360874a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11adca6d78daed8f270a004beb7d4d14') in 0.068714 seconds
+  Import took 0.071957 seconds .
+
