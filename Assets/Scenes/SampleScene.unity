@@ -171,10 +171,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationSpeed: 500
+  FisPressed: 1
   QisPressed: 0
   EisPressed: 0
-  FisPressed: 0
-  RisPressed: 1
+  RisPressed: 0
 --- !u!114 &46621402
 MonoBehaviour:
   m_ObjectHideFlags: 0

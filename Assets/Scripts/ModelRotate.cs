@@ -9,16 +9,20 @@ public class ModelRotate : MonoBehaviour
     public float RotationSpeed = 500f;
 
     [Header("Public bools")]
+    public bool FisPressed = true;
     public bool QisPressed = false;
     public bool EisPressed = false;
-    public bool FisPressed = false;
-    public bool RisPressed = true;
+    public bool RisPressed = false;
 
     // Update is called once per frame
     void Update()
     {
 
         //Bools
+        if (FisPressed)
+        {
+            transform.Rotate(0, 0, 0);
+        }
         if (RisPressed)
         {
             transform.Rotate((Input.GetAxis("Mouse Y") * RotationSpeed * Time.deltaTime), (Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0, Space.World);
@@ -31,10 +35,7 @@ public class ModelRotate : MonoBehaviour
         {
             transform.Rotate(0, (Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0, Space.World);
         }
-        if (FisPressed)
-        {
-            transform.Rotate(0, 0, 0);
-        }
+       
 
         //Pressed
         if (Input.GetKeyDown(KeyCode.Q)) 
