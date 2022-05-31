@@ -5,12 +5,16 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class TimerScript : MonoBehaviour
 {
+    [Header("Timer Settings:")]
     public Text Timer;
     public float countdown = 180f;
-    // Start is called before the first frame update
+
+    [Header("Dont Destroy Music")]
+    public GameObject DontDestroy;
+
     void Start()
     {
-        
+        DontDestroy = GameObject.Find("Hover");
     }
 
     // Update is called once per frame
@@ -25,6 +29,7 @@ public class TimerScript : MonoBehaviour
     }
     public void ResetGame()
     {
+        DontDestroyOnLoad(DontDestroy);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         print("Reset Scene");
     }

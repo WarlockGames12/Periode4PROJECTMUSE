@@ -66,5 +66,6 @@ public class ModelRotate : MonoBehaviour
             RisPressed = false;
             FisPressed = true;
         }
+        
     }
 }
