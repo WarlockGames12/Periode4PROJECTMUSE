@@ -56,8 +56,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -69,21 +67,21 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2004}
+      Script: {instanceID: 2002}
     - Class: 114
-      Script: {instanceID: 2296}
+      Script: {instanceID: 2294}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2574}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 3094}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3894}
+      Script: {instanceID: 3892}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 4050}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -125,6 +123,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -134,21 +134,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1482}
+      Script: {instanceID: 1480}
     - Class: 114
-      Script: {instanceID: 1962}
+      Script: {instanceID: 1960}
     - Class: 114
-      Script: {instanceID: 2296}
+      Script: {instanceID: 2294}
     - Class: 114
-      Script: {instanceID: 2408}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2574}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2756}
     - Class: 114
-      Script: {instanceID: 2844}
+      Script: {instanceID: 2842}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 4306}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -562,7 +562,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: fdc670a3cbbd99e8f2005f258ef1ec4e
+      Hash: 919d94bb703122b2408fbd3fe4247cde
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHitsWithRay

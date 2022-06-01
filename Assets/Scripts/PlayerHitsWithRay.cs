@@ -25,6 +25,7 @@ public class PlayerHitsWithRay : MonoBehaviour
     [Header("Animation After Winning: ")]
     public Animation Model;
     public AudioSource Win;
+    public bool switchedOn = true;
     
 
     private bool isRotated0 = false;
@@ -171,7 +172,11 @@ public class PlayerHitsWithRay : MonoBehaviour
 
     IEnumerator Rotating(int Rotate)
     {
-        Win.Play();
+        if (switchedOn && Win.isPlaying == false)
+        {
+            Win.Play();
+            switchedOn = false;
+        }
         Model.Play();
         yield return new WaitForSeconds(Rotate);
         SceneManager.LoadScene("SampleScene");
