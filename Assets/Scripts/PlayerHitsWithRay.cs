@@ -22,6 +22,10 @@ public class PlayerHitsWithRay : MonoBehaviour
     [Header("Audio Snaps")]
     public AudioSource Snap;
 
+    [Header("Animation After Winning: ")]
+    public Animation Model;
+    public AudioSource Win;
+    
 
     private bool isRotated0 = false;
     private bool isRotated1 = false;
@@ -52,6 +56,7 @@ public class PlayerHitsWithRay : MonoBehaviour
         {
             DragAbleTransform[i] = DragAblePole[i].transform;
         }
+       
     }
 
     // Update is called once per frame
@@ -160,10 +165,17 @@ public class PlayerHitsWithRay : MonoBehaviour
         if (isRotated0 && isRotated1 && isRotated2 && isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace1 && isDragged)
         {
             DontDestroyOnLoad(Hover);
-            SceneManager.LoadScene("SampleScene");
+            StartCoroutine(Rotating(5));
         }
     }
 
+    IEnumerator Rotating(int Rotate)
+    {
+        Win.Play();
+        Model.Play();
+        yield return new WaitForSeconds(Rotate);
+        SceneManager.LoadScene("SampleScene");
+    }
 
     public void MouseDrag()
     {
