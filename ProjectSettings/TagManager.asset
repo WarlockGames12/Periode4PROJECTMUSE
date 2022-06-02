@@ -13,6 +13,8 @@ TagManager:
   - Bendable5
   - PoleScroll
   - PoleScroll1
+  - BendableScroll
+  - WinModus
   layers:
   - Default
   - TransparentFX
