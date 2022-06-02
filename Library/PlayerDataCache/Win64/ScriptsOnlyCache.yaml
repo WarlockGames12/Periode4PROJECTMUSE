@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - ModelRotate
     - PlayerHitsWithRay
     - TimerScript
+    - Tutorial
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -67,21 +68,27 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2002}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 2294}
+      Script: {instanceID: 2102}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2394}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2672}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 3892}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 3192}
+    - Class: 114
+      Script: {instanceID: 3992}
+    - Class: 114
+      Script: {instanceID: 4150}
+    - Class: 114
+      Script: {instanceID: 4350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -89,6 +96,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -134,21 +143,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1480}
+      Script: {instanceID: 1580}
     - Class: 114
-      Script: {instanceID: 1960}
+      Script: {instanceID: 2060}
     - Class: 114
-      Script: {instanceID: 2294}
+      Script: {instanceID: 2394}
     - Class: 114
-      Script: {instanceID: 2406}
+      Script: {instanceID: 2506}
     - Class: 114
-      Script: {instanceID: 2572}
+      Script: {instanceID: 2672}
     - Class: 114
-      Script: {instanceID: 2756}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 2842}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 4306}
+      Script: {instanceID: 4406}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -592,7 +601,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 4e9794e0a3477bce11bd195130c733b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tutorial
@@ -630,4 +639,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Start.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/awesome/HitosPuzzle/Hito's Puzzle.exe
+  playerPath: C:/Users/jorda/Desktop/GamePlayBuild/Hito's Puzzle.exe

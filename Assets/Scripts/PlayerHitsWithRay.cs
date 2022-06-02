@@ -179,7 +179,7 @@ public class PlayerHitsWithRay : MonoBehaviour
         }
         Model.Play();
         yield return new WaitForSeconds(Rotate);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Start");
     }
 
     public void MouseDrag()
