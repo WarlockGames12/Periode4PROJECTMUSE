@@ -29,8 +29,8 @@ public class TimerScript : MonoBehaviour
     }
     public void ResetGame()
     {
-        DontDestroyOnLoad(DontDestroy);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+        SceneManager.LoadScene("Start");
         print("Reset Scene");
     }
 }

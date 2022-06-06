@@ -36,6 +36,7 @@ public class PlayerHitsWithRay : MonoBehaviour
     private bool isRotated5 = false;
     private bool isOnRightPlace = false;
     private bool isOnRightPlace1 = false;
+    private bool isOnRightPlace2 = false;
     private float mouseYReference = 0f;
     private bool isDragged = false;
     private bool MouseisPressed = false;
@@ -163,9 +164,8 @@ public class PlayerHitsWithRay : MonoBehaviour
                 */
             }
         }
-        if (isRotated0 && isRotated1 && isRotated2 && isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace1 && isDragged)
+        if (isRotated0 && isRotated1 && isRotated2 && isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace1 && isDragged && isOnRightPlace2)
         {
-            DontDestroyOnLoad(Hover);
             StartCoroutine(Rotating(5));
         }
     }
@@ -179,7 +179,8 @@ public class PlayerHitsWithRay : MonoBehaviour
         }
         Model.Play();
         yield return new WaitForSeconds(Rotate);
-        SceneManager.LoadScene("SampleScene");
+        Hover.SetActive(false);
+        SceneManager.LoadScene("Start");
     }
 
     public void MouseDrag()
@@ -286,6 +287,18 @@ public class PlayerHitsWithRay : MonoBehaviour
                     DragAblePole[2].transform.localPosition = new Vector3(DragAblePole[2].transform.localPosition.x, 22.4f, 6.802f);
                 }
             }
+            if (hits.collider.CompareTag("PoleScroll2") && !isOnRightPlace2)
+            {
+                float range = 5f;
+                DragAblePole[3].transform.localPosition = new Vector3(DragAblePole[3].transform.localPosition.x, DragAblePole[3].transform.localPosition.y + direction, DragAblePole[3].transform.localPosition.z);
+                if (DragAblePole[3].transform.localPosition.y > 0.8802491f - range && DragAblePole[3].transform.localPosition.y < 0.8802491f + range)
+                {
+                    Snap.Play();
+                    isOnRightPlace2 = true;
+                    DragAblePole[3].transform.localPosition = new Vector3(DragAblePole[3].transform.localPosition.x, 0.8802491f, 4.930663f);
+                }
+            }
+
         }
         
 

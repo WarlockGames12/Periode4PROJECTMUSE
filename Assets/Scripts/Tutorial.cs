@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
+
+    [Header("Tutorial: ")]
+    public GameObject Tutorials;
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Tutorials.SetActive(true);
+        Time.timeScale = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartGame()
     {
-        
+        Tutorials.SetActive(false);
+        Time.timeScale = 1;
     }
 }
