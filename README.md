@@ -1,5 +1,4 @@
-[BannerGithub](https://user-images.githubusercontent.com/47526227/172593561-d9f88b99-11ce-4308-b424-af8490c710f0.png)
-
+![BannerGithub](https://user-images.githubusercontent.com/47526227/172593752-686d1d06-e09b-4766-af8c-210317105147.png)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Team 2
 ### Gemaakt Door: 
