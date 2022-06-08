@@ -1,7 +1,10 @@
 # Hito's Puzzle
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Team 2
-#### Gemaakt Door: Dirk ten Have, Jordan Ross, Dylan Vermeulen, Anas Loukili, Abdul Rocha, Xander Rijkse, Danny, Dilara Arslan
+### Gemaakt Door: 
+    Game Devs: Dirk ten Have & Jordan Ross
+    Game Artist: Dylan Vermeulen, Anas Loukili, Abdul Rocha & Xander Rijkse
+    Ruimtelijke Vormgevers: Danny & Dilara Arslan
 ### Platform: PC
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Omschrijving:
