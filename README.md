@@ -2,7 +2,8 @@
 ![BannerGithub](https://user-images.githubusercontent.com/47526227/172594702-3da84f78-4a0a-42c8-9768-004eee5495c6.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Team 2
+### Team Naam: 
+###### Team 2
 ### Gemaakt Door: 
 ######     Game Devs: Dirk ten Have & Jordan Ross
 ######     Game Artist: Dylan Vermeulen, Anas Loukili, Abdul Rocha & Xander Rijkse
