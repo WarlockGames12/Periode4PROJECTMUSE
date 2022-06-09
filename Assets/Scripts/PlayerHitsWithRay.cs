@@ -26,7 +26,9 @@ public class PlayerHitsWithRay : MonoBehaviour
     public Animation Model;
     public AudioSource Win;
     public bool switchedOn = true;
-    
+
+    [Header("Speed for Rotation")]
+    public float RotationSpeed = 500f;
 
     private bool isRotated0 = false;
     private bool isRotated1 = false;
@@ -40,6 +42,7 @@ public class PlayerHitsWithRay : MonoBehaviour
     private float mouseYReference = 0f;
     private bool isDragged = false;
     private bool MouseisPressed = false;
+    private bool Mouse1isPressed = false;
 
 
 
@@ -77,6 +80,7 @@ public class PlayerHitsWithRay : MonoBehaviour
 
         if (MouseisPressed) MouseDrag();
 
+        
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -164,6 +168,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 */
             }
         }
+        
         if (isRotated0 && isRotated1 && isRotated2 && isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace1 && isDragged && isOnRightPlace2)
         {
             StartCoroutine(Rotating(5));
@@ -245,8 +250,7 @@ public class PlayerHitsWithRay : MonoBehaviour
         */
 
         if (Physics.Raycast(rays, out hits))
-        {
-
+        { 
             if (hits.collider.CompareTag("PoleScroll") && !isOnRightPlace)
             {
                 float range = 5f;

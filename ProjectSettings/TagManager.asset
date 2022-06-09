@@ -16,6 +16,7 @@ TagManager:
   - BendableScroll
   - WinModus
   - PoleScroll2
+  - Model
   layers:
   - Default
   - TransparentFX
