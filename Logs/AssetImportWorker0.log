@@ -15,11 +15,11 @@ D:/awesome/ProjectMuse
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50919
+49839
 Successfully changed project path to: D:/awesome/ProjectMuse
 D:/awesome/ProjectMuse
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 29.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 36.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,71 +35,62 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002722 seconds.
+Registered in 0.002659 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 28.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 26.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.225 seconds
+- Completed reload, in  1.173 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002331 seconds.
+Registered in 0.001997 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.965 seconds
+- Completed reload, in  0.940 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1513 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 72.8 MB.
 System memory in use after: 72.9 MB.
 
 Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 1966.
-Total: 4.051200 ms (FindLiveObjects: 0.501300 ms CreateObjectMapping: 0.158800 ms MarkObjects: 3.248200 ms  DeleteObjects: 0.140500 ms)
+Total: 2.013800 ms (FindLiveObjects: 0.148100 ms CreateObjectMapping: 0.052000 ms MarkObjects: 1.738900 ms  DeleteObjects: 0.073900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Animations/WinCondition/flower_map_01 (1).controller
-  artifactKey: Guid(8a7b2dd7e09a1344da2876e2dc39dded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/WinCondition/flower_map_01 (1).controller using Guid(8a7b2dd7e09a1344da2876e2dc39dded) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The legacy Animation Clip "WinRotation" cannot be used in the State "WinRotation". Legacy AnimationClips are not allowed in Animator Controllers.
-
- -> (artifact id: 'c4b55397f840853a463967ac101cc769') in 0.037137 seconds
-  Import took 0.041455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/Animations/WinCondition/WinRotation.anim
-  artifactKey: Guid(d5fba30a5ca31c54f859fd327afde29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/WinCondition/WinRotation.anim using Guid(d5fba30a5ca31c54f859fd327afde29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1a525ac7ab1344c82e912012ca6b8c') in 0.006395 seconds
-  Import took 0.008884 seconds .
+  path: Assets/Scenes/Start.unity
+  artifactKey: Guid(56f2ad1fdc0f63c41b42b1a316c265f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Start.unity using Guid(56f2ad1fdc0f63c41b42b1a316c265f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c19a2ca1997ec605b8a3df73330385') in 0.011942 seconds
+  Import took 0.014373 seconds .
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.99 ms, found 2 plugins.
+Registering precompiled user dll's ...
+Registered in 0.002260 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 43.0 MB.
-System memory in use after: 43.1 MB.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.959 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1507 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 72.7 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1966.
-Total: 2.280900 ms (FindLiveObjects: 0.138900 ms CreateObjectMapping: 0.050900 ms MarkObjects: 2.074600 ms  DeleteObjects: 0.015300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 49.213454 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd0562a1508d6b73f6b471e84703746') in 0.005960 seconds
-  Import took 0.008584 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1969.
+Total: 1.901000 ms (FindLiveObjects: 0.149200 ms CreateObjectMapping: 0.047100 ms MarkObjects: 1.680500 ms  DeleteObjects: 0.023200 ms)
 
