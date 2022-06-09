@@ -179,7 +179,7 @@ public class PlayerHitsWithRay : MonoBehaviour
         }
         Model.Play();
         yield return new WaitForSeconds(Rotate);
-        Hover.SetActive(false);
+        Destroy(Hover);
         SceneManager.LoadScene("Start");
     }
 
@@ -249,9 +249,6 @@ public class PlayerHitsWithRay : MonoBehaviour
 
             if (hits.collider.CompareTag("PoleScroll") && !isOnRightPlace)
             {
-                /* 
-                * Only move first object hit until mouse button goes up
-                */
                 float range = 5f;
                 Debug.Log(direction);
                 DragAblePole[0].transform.localPosition = new Vector3(DragAblePole[0].transform.localPosition.x, DragAblePole[0].transform.localPosition.y + direction, DragAblePole[0].transform.localPosition.z);
