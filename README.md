@@ -7,7 +7,7 @@
 ### Gemaakt Door: 
 ######     Game Devs: Dirk ten Have & Jordan Ross
 ######     Game Artist: Dylan Vermeulen, Anas Loukili, Abdul Rocha & Xander Rijkse
-######     Ruimtelijke Vormgevers: Danny & Dilara Arslan
+######     Ruimtelijke Vormgevers: Danny van Vliet & Dilara Arslan
 ### Platform: PC
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Omschrijving:
