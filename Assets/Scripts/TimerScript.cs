@@ -16,6 +16,7 @@ public class TimerScript : MonoBehaviour
 
     [Header("Play Rotation after Game is over")]
     public Animation Model;
+    public AudioSource LoseCondition;
 
     void Start()
     {
@@ -38,6 +39,7 @@ public class TimerScript : MonoBehaviour
     }
     public void ResetGame()
     {
+        LoseCondition.Play();
         GameOver.SetActive(true);
         Model.Play();
         isRunning = true;
