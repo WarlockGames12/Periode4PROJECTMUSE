@@ -12,6 +12,11 @@ public class PlayerHitsWithRay : MonoBehaviour
 
     [Header("Sparky for Objects: ")]
     public ShocksParticles[] ParticlesWhenDone;
+    public GameObject[] TelevisionScreens;
+
+    [Header("WinScherm")]
+    public TimerScript isRunning;
+    public GameObject WinScreen;
 
     [Header("Dragable")]
     public GameObject[] DragAblePole;
@@ -54,6 +59,13 @@ public class PlayerHitsWithRay : MonoBehaviour
         DragAbleTransform = new Transform[DragAblePole.Length];
 
         Hover = GameObject.Find("Hover");
+        isRunning.isRunning = false;
+        WinScreen.SetActive(false);
+
+        for (int i = 0; i < TelevisionScreens.Length; i++)
+        {
+            TelevisionScreens[i].SetActive(false);
+        }
 
         for (int i = 0; i < Bendables.Length; i++)
         {
@@ -187,11 +199,14 @@ public class PlayerHitsWithRay : MonoBehaviour
         {
             ParticlesWhenDone[1].ParticlesWontShock = true;
             ParticlesWhenDone[5].ParticlesWontShock = true;
+            TelevisionScreens[1].SetActive(true);
+            TelevisionScreens[4].SetActive(true);
         }
 
         if (isRotated2 && isOnRightPlace1)
         {
             ParticlesWhenDone[0].ParticlesWontShock = true;
+            TelevisionScreens[0].SetActive(true);
         }
 
         if (isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace2)
@@ -199,6 +214,9 @@ public class PlayerHitsWithRay : MonoBehaviour
             ParticlesWhenDone[2].ParticlesWontShock = true;
             ParticlesWhenDone[3].ParticlesWontShock = true;
             ParticlesWhenDone[4].ParticlesWontShock = true;
+            TelevisionScreens[2].SetActive(true);
+            TelevisionScreens[3].SetActive(true);
+            TelevisionScreens[5].SetActive(true);
         }
 
         if (isRotated0 && isRotated1 && isRotated2 && isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace1 && isDragged && isOnRightPlace2)
@@ -215,9 +233,9 @@ public class PlayerHitsWithRay : MonoBehaviour
             switchedOn = false;
         }
         Model.Play();
+        isRunning.isRunning = true;
+        WinScreen.SetActive(true);
         yield return new WaitForSeconds(Rotate);
-        Destroy(Hover);
-        SceneManager.LoadScene("Start");
     }
 
     public void MouseDrag()
@@ -339,8 +357,17 @@ public class PlayerHitsWithRay : MonoBehaviour
 
             
         }
-       
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
+
+    public void BacktoMenu()
+    { 
+        SceneManager.LoadScene("Start");
+        Destroy(Hover);
+    }
+}
 
 
 

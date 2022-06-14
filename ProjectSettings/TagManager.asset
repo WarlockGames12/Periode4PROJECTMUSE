@@ -17,6 +17,7 @@ TagManager:
   - WinModus
   - PoleScroll2
   - Model
+  - Audio
   layers:
   - Default
   - TransparentFX

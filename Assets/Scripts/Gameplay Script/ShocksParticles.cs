@@ -6,37 +6,29 @@ public class ShocksParticles : MonoBehaviour
 {
 
     [Header("Particles")]
-    public AudioSource ShockEffect;
     public ParticleSystem Particles;
-    public float ShockTimer = 3f;
+    private float ShockTimer;
     public bool ParticlesWontShock = false;
+
+    [Header("Particle Sound: ")]
+    public AudioSource[] RandomElectrics;
 
 
     void Start()
     {
+        ShockTimer = Random.Range(1.0f, 5.0f);
+        
         InvokeRepeating("ParticlesPlayer", ShockTimer, ShockTimer);
-    }
-    
-    void Update()
-    {
-        if (ParticlesWontShock)
-        {
-            Particles.Stop();
-            ShockTimer = 10000000000f;
-        }
     }
     
     public void ParticlesPlayer()
     {
-        ShockEffect.Play();
-        Particles.Play();
-    }
-
-    /*
-    IEnumerator ParticlePlayer()
-    {
+        if (!ParticlesWontShock)
+        {
+            int Randoms = Random.Range(0, 3);
+            RandomElectrics[Randoms].Play();
+            Particles.Play();
+        }
         
-        yield return new WaitForSeconds(3);
     }
-    */
 }
