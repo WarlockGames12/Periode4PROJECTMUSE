@@ -13,6 +13,9 @@ public class PlayerHitsWithRay : MonoBehaviour
     [Header("Sparky for Objects: ")]
     public ShocksParticles[] ParticlesWhenDone;
 
+    [Header("WinScreen: ")]
+    public GameObject WinScreen; 
+
     [Header("Dragable")]
     public GameObject[] DragAblePole;
     private Transform[] DragAbleTransform;
@@ -54,6 +57,8 @@ public class PlayerHitsWithRay : MonoBehaviour
         DragAbleTransform = new Transform[DragAblePole.Length];
 
         Hover = GameObject.Find("Hover");
+
+        WinScreen.SetActive(false);
 
         for (int i = 0; i < Bendables.Length; i++)
         {
@@ -217,7 +222,8 @@ public class PlayerHitsWithRay : MonoBehaviour
         Model.Play();
         yield return new WaitForSeconds(Rotate);
         Destroy(Hover);
-        SceneManager.LoadScene("Start");
+        WinScreen.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void MouseDrag()

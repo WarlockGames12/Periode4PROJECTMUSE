@@ -15,4 +15,16 @@ public class ButtonScript : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void RestartLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Start");
+    }
+
 }

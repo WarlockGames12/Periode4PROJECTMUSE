@@ -45,6 +45,7 @@ public class TimerScript : MonoBehaviour
         isRunning = true;
     }
 
+
     public void BackToMenu()
     {
         Destroy(DontDestroy);
