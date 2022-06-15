@@ -11,10 +11,9 @@
 ### Platform: PC
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Omschrijving:
--------------------------------------------------------------------------------------------------------------------------------------------------------------
 ###### Je moet een puzzel zien op te lossen waardoor je uiteindelijk het level haalt, je kan het level zelf omdraaien, palen en buizen draggen naar hun posities toe, waaronder ook nog een timer onder zit om de speler onder druk te geven. Als je de puzzel compleet hebt dan laat het kunst zien van de film artist: Hito Stereyl
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+### Links: 
 ###### Link Trello: https://trello.com/b/lZzuqDCt/muse
 ###### Link Logboek PDF: Work in Progress
 ###### Video Gameplay: https://youtu.be/tT9kcVlG5Xs
