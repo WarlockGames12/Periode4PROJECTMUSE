@@ -16,3 +16,6 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Link Trello: https://trello.com/b/lZzuqDCt/muse
+Link Logboek PDF: Work in Progress
+Video Gameplay: https://youtu.be/tT9kcVlG5Xs
+
