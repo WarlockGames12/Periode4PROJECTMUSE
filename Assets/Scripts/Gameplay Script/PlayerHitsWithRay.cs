@@ -51,7 +51,7 @@ public class PlayerHitsWithRay : MonoBehaviour
     private bool isDragged = false;
     private bool MouseisPressed = false;
 
-
+    private Transform currentSelected;
 
     private void Start()
     {
@@ -81,28 +81,17 @@ public class PlayerHitsWithRay : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0) && !MouseisPressed)
         {
             MouseisPressed = true;
             mouseYReference = Input.mousePosition.y;
-        }
-        if (Input.GetMouseButtonUp(0) && MouseisPressed)
-        {
-            MouseisPressed = false;
-        }
-
-        if (MouseisPressed) MouseDrag();
-
-        
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Input.GetMouseButtonDown(0))
+            if (Physics.Raycast(ray, out hit))
             {
-              
-              if (Physics.Raycast(ray, out hit))
-              {
+                Debug.Log("HitSomething");
+                currentSelected = hit.transform;
                 Debug.ClearDeveloperConsole();
                 if (hit.collider.CompareTag("Bendable") && !isRotated0)
                 {
@@ -159,7 +148,7 @@ public class PlayerHitsWithRay : MonoBehaviour
                 if (hit.collider.CompareTag("Bendable4") && !isRotated4)
                 {
                     SqueekySqueek.Play();
-                    Bendables[4].transform.Rotate(0, 90,0);
+                    Bendables[4].transform.Rotate(0, 90, 0);
                     Debug.Log(Bendables[4].transform.localEulerAngles);
                     if (Bendables[4].transform.localEulerAngles.y == 90 || Bendables[4].transform.localEulerAngles.y == -270)
                     {
@@ -181,19 +170,16 @@ public class PlayerHitsWithRay : MonoBehaviour
                         ParticlesWhenDone[11].ParticlesWontShock = true;
                         isRotated5 = true;
                     }
-                }/*
-                if (hit.collider.CompareTag("PoleScroll"))
-                {
-                    OnMouseDrag();
                 }
-                if (hit.collider.CompareTag("PoleScroll1"))
-                {
-                    
-                    OnMouseDrag();
-                }
-                */
             }
         }
+        if (Input.GetMouseButtonUp(0) && MouseisPressed)
+        {
+            MouseisPressed = false;
+            currentSelected = null;
+        }
+
+        if (MouseisPressed) MouseDrag();
         
         if (isRotated0 && isRotated1 && isDragged)
         {
@@ -240,14 +226,19 @@ public class PlayerHitsWithRay : MonoBehaviour
 
     public void MouseDrag()
     {
+        if (currentSelected == null)
+        {
+            return;
+        }
         Debug.Log("drag");
-        RaycastHit hits;
-        Ray rays = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit hits;
+        //Ray rays = Camera.main.ScreenPointToRay(Input.mousePosition);
+
 
         float direction = 0;
         if (Mathf.Abs(mouseYReference - Input.mousePosition.y) > 15f)
         {
-            if(mouseYReference + Input.mousePosition.y > 0)
+            if (mouseYReference + Input.mousePosition.y > 0)
             {
                 direction = speed * Time.deltaTime;
             }
@@ -257,116 +248,33 @@ public class PlayerHitsWithRay : MonoBehaviour
             }
         }
 
-        /*RaycastHit Rotation;
-        Ray rayLit = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        float directionYRotation = 0f;
-        if (Mathf.Abs(mouseYRotationReference - Input.mousePosition.x) > 15f)
+        float range = 5f;
+        float YReference = currentSelected.GetComponent<FinalPolePositionScript>().Y;
+        Debug.Log(direction);
+        currentSelected.localPosition = new Vector3(currentSelected.localPosition.x, currentSelected.localPosition.y + direction, currentSelected.localPosition.z);
+        if (currentSelected.localPosition.y > YReference - range && currentSelected.localPosition.y < YReference + range)
         {
-            if (mouseYRotationReference + Input.mousePosition.x > 0)
-            {
-                directionYRotation = speeding * Time.deltaTime;
-            }
-            else
-            {
-                directionYRotation = -speeding * Time.deltaTime;
-            }
+            Snap.Play();
+            Debug.Log("Pole is dragged");
+            isOnRightPlace = true;
+            currentSelected.localPosition = new Vector3(currentSelected.localPosition.x, YReference, currentSelected.localPosition.z);
         }
 
-        if (Physics.Raycast(rayLit, out Rotation))
-        {
-            if (Rotation.collider.CompareTag("Bendable") && !isRotated0)
-            {
-                float range = 5f;
-                Bendables[0].transform.Rotate(Bendables[0].transform.rotation.x, Bendables[0].transform.rotation.y + directionYRotation, Bendables[0].transform.rotation.z);
-                if (Bendables[0].transform.rotation.y > 360 - range && Bendables[0].transform.rotation.y < 360 + range)
-                {
-                    Snap.Play();
-                    isRotated0 = true;
-                    Bendables[0].transform.Rotate(0, 0, 0);
-                }
-            }
-            if (Rotation.collider.CompareTag("Bendable1") && !isRotated1)
-            {
-                float range = 5f;
-                Bendables[1].transform.Rotate(Bendables[1].transform.rotation.x, Bendables[1].transform.rotation.y + directionYRotation, Bendables[1].transform.rotation.z);
-                if (Bendables[1].transform.rotation.y > 270 - range && Bendables[1].transform.rotation.y < 270 + range)
-                {
-                    Snap.Play();
-                    isRotated1 = true;
-                }
-            }
-        }
-        */
-
-        if (Physics.Raycast(rays, out hits))
-        { 
-            if (hits.collider.CompareTag("PoleScroll") && !isOnRightPlace)
-            {
-                float range = 5f;
-                Debug.Log(direction);
-                DragAblePole[0].transform.localPosition = new Vector3(DragAblePole[0].transform.localPosition.x, DragAblePole[0].transform.localPosition.y + direction, DragAblePole[0].transform.localPosition.z);
-                if (DragAblePole[0].transform.localPosition.y > 0.79f - range && DragAblePole[0].transform.localPosition.y < 0.79f + range)
-                {
-                    Snap.Play();
-                    Debug.Log("Pole is dragged");
-                    isOnRightPlace = true;
-                    DragAblePole[0].transform.localPosition = new Vector3(DragAblePole[0].transform.localPosition.x, 0.79f, DragAblePole[0].transform.localPosition.z);
-                }
-            }
-            if (hits.collider.CompareTag("PoleScroll1") && !isOnRightPlace1)
-            {
-                float range = 5f;
-                Debug.Log("Drag Pole1");
-                DragAblePole[1].transform.localPosition = new Vector3(DragAblePole[1].transform.localPosition.x, DragAblePole[1].transform.localPosition.y + direction, DragAblePole[1].transform.localPosition.z);
-                if (DragAblePole[1].transform.localPosition.y > 0.8802491f - range && DragAblePole[1].transform.localPosition.y < 0.8802491f + range)
-                {
-                    Snap.Play();
-                    Debug.Log("Pole is dragged");
-                    isOnRightPlace1 = true;
-                    DragAblePole[1].transform.localPosition = new Vector3(DragAblePole[1].transform.localPosition.x, 0.8802491f, DragAblePole[1].transform.localPosition.z);
-                }
-            }
-            if (hits.collider.CompareTag("BendableScroll") && !isDragged)
-            {
-                float range = 5f;
-                DragAblePole[2].transform.localPosition = new Vector3(DragAblePole[2].transform.localPosition.x, DragAblePole[2].transform.localPosition.y + direction, DragAblePole[2].transform.localPosition.z);
-                if (DragAblePole[2].transform.localPosition.y > 22.4f - range && DragAblePole[2].transform.localPosition.y < 22.4f + range)
-                {
-                    Snap.Play();
-                    isDragged = true;
-                    DragAblePole[2].transform.localPosition = new Vector3(DragAblePole[2].transform.localPosition.x, 22.4f, 6.802f);
-                }
-            }
-            if (hits.collider.CompareTag("PoleScroll2") && !isOnRightPlace2)
-            {
-                float range = 5f;
-                DragAblePole[3].transform.localPosition = new Vector3(DragAblePole[3].transform.localPosition.x, DragAblePole[3].transform.localPosition.y + direction, DragAblePole[3].transform.localPosition.z);
-                if (DragAblePole[3].transform.localPosition.y > 0.8802491f - range && DragAblePole[3].transform.localPosition.y < 0.8802491f + range)
-                {
-                    Snap.Play();
-                    isOnRightPlace2 = true;
-                    DragAblePole[3].transform.localPosition = new Vector3(DragAblePole[3].transform.localPosition.x, 0.8802491f, 4.930663f);
-                }
-            }
-
-        }
+          
+    }
         
 
-               
 
-            
-        }
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene("SampleScene");
-    }
+public void RestartLevel()
+{
+SceneManager.LoadScene("SampleScene");
+}
 
-    public void BacktoMenu()
-    { 
-        SceneManager.LoadScene("Start");
-        Destroy(Hover);
-    }
+public void BacktoMenu()
+{ 
+SceneManager.LoadScene("Start");
+Destroy(Hover);
+}
 }
 
 

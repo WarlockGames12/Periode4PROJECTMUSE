@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonScript
+    - FinalPolePositionScript
     - HoverButton
     - ModelRotate
     - PlayerHitsWithRay
@@ -123,23 +124,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3132}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 3340}
     - Class: 114
-      Script: {instanceID: 3996}
+      Script: {instanceID: 3346}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 3998}
     - Class: 114
-      Script: {instanceID: 4610}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 5012}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 6010}
+      Script: {instanceID: 4612}
     - Class: 114
-      Script: {instanceID: 6298}
+      Script: {instanceID: 5014}
     - Class: 114
-      Script: {instanceID: 6646}
+      Script: {instanceID: 6012}
     - Class: 114
-      Script: {instanceID: 6764}
+      Script: {instanceID: 6300}
+    - Class: 114
+      Script: {instanceID: 6648}
+    - Class: 114
+      Script: {instanceID: 6766}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -234,59 +239,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3132}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 3346}
     - Class: 114
-      Script: {instanceID: 3400}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3550}
+      Script: {instanceID: 3552}
     - Class: 114
-      Script: {instanceID: 3572}
+      Script: {instanceID: 3574}
     - Class: 114
-      Script: {instanceID: 3722}
+      Script: {instanceID: 3724}
     - Class: 114
-      Script: {instanceID: 3792}
+      Script: {instanceID: 3794}
     - Class: 114
-      Script: {instanceID: 3850}
+      Script: {instanceID: 3852}
     - Class: 114
-      Script: {instanceID: 3996}
+      Script: {instanceID: 3998}
     - Class: 114
-      Script: {instanceID: 4000}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 4150}
+      Script: {instanceID: 4152}
     - Class: 114
-      Script: {instanceID: 4172}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4268}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 4368}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 4400}
     - Class: 114
-      Script: {instanceID: 4436}
+      Script: {instanceID: 4438}
     - Class: 114
-      Script: {instanceID: 4538}
+      Script: {instanceID: 4540}
     - Class: 114
-      Script: {instanceID: 4542}
+      Script: {instanceID: 4544}
     - Class: 114
-      Script: {instanceID: 4620}
+      Script: {instanceID: 4622}
     - Class: 114
-      Script: {instanceID: 4740}
+      Script: {instanceID: 4742}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 5432}
+      Script: {instanceID: 5434}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 5618}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 6116}
+      Script: {instanceID: 6118}
     - Class: 114
-      Script: {instanceID: 6168}
+      Script: {instanceID: 6170}
     - Class: 114
-      Script: {instanceID: 6578}
+      Script: {instanceID: 6580}
     - Class: 114
-      Script: {instanceID: 6764}
+      Script: {instanceID: 6766}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -574,6 +579,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 6689eea0828f6250cd8f616449a7a728
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FinalPolePositionScript
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c

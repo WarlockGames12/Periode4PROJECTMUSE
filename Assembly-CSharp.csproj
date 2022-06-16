@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Gameplay Script\ModelRotate.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\HoverButton.cs" />
+    <Compile Include="Assets\Scripts\Gameplay Script\FinalPolePositionScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
