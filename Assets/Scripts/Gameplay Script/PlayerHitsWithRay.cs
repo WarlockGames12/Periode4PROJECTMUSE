@@ -53,6 +53,8 @@ public class PlayerHitsWithRay : MonoBehaviour
 
     private Transform currentSelected;
 
+    public FinalPolePositionScript[] PoleScrolls;
+
     private void Start()
     {
         BendablesTransform = new Transform[Bendables.Length];
@@ -252,15 +254,34 @@ public class PlayerHitsWithRay : MonoBehaviour
         float YReference = currentSelected.GetComponent<FinalPolePositionScript>().Y;
         Debug.Log(direction);
         currentSelected.localPosition = new Vector3(currentSelected.localPosition.x, currentSelected.localPosition.y + direction, currentSelected.localPosition.z);
-        if (currentSelected.localPosition.y > YReference - range && currentSelected.localPosition.y < YReference + range)
+        if (PoleScrolls[0].GameObjectTransform.localPosition.y > YReference - range && PoleScrolls[0].GameObjectTransform.localPosition.y < YReference + range && PoleScrolls[0].PoleScroll)
         {
             Snap.Play();
             Debug.Log("Pole is dragged");
             isOnRightPlace = true;
-            currentSelected.localPosition = new Vector3(currentSelected.localPosition.x, YReference, currentSelected.localPosition.z);
+            PoleScrolls[0].GameObjectTransform.localPosition = new Vector3(PoleScrolls[0].GameObjectTransform.localPosition.x, YReference, PoleScrolls[0].GameObjectTransform.localPosition.z);
         }
-
-          
+        if (PoleScrolls[1].GameObjectTransform.localPosition.y > YReference - range && PoleScrolls[1].GameObjectTransform.localPosition.y < YReference + range && PoleScrolls[1].PoleScroll1)
+        {
+            Snap.Play();
+            Debug.Log("Pole is dragged");
+            isOnRightPlace1 = true;
+            PoleScrolls[1].GameObjectTransform.localPosition = new Vector3(PoleScrolls[1].GameObjectTransform.localPosition.x, YReference, PoleScrolls[1].GameObjectTransform.localPosition.z);
+        }
+        if (PoleScrolls[2].GameObjectTransform.localPosition.y > YReference - range && PoleScrolls[2].GameObjectTransform.localPosition.y < YReference + range && PoleScrolls[2].PoleScroll2)
+        {
+            Snap.Play();
+            Debug.Log("Pole is dragged");
+            isOnRightPlace2 = true;
+            PoleScrolls[2].GameObjectTransform.localPosition = new Vector3(PoleScrolls[2].GameObjectTransform.localPosition.x, YReference, PoleScrolls[2].GameObjectTransform.localPosition.z);
+        }
+        if (PoleScrolls[3].GameObjectTransform.localPosition.y > YReference - range && PoleScrolls[3].GameObjectTransform.localPosition.y < YReference + range && PoleScrolls[3].Bendable)
+        {
+            Snap.Play();
+            Debug.Log("Pole is dragged");
+            isDragged = true;
+            PoleScrolls[3].GameObjectTransform.localPosition = new Vector3(PoleScrolls[3].GameObjectTransform.localPosition.x, YReference, PoleScrolls[3].GameObjectTransform.localPosition.z);
+        }
     }
         
 
@@ -270,11 +291,11 @@ public void RestartLevel()
 SceneManager.LoadScene("SampleScene");
 }
 
-public void BacktoMenu()
-{ 
-SceneManager.LoadScene("Start");
-Destroy(Hover);
-}
+   public void BacktoMenu()
+   { 
+      SceneManager.LoadScene("Start");
+      Destroy(Hover);
+   }
 }
 
 

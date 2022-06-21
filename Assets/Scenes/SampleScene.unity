@@ -5016,6 +5016,11 @@ MonoBehaviour:
   Win: {fileID: 1121272267}
   switchedOn: 1
   RotationSpeed: 500
+  PoleScrolls:
+  - {fileID: 1246987124567715231}
+  - {fileID: 3175780729084209218}
+  - {fileID: 3922386197066143847}
+  - {fileID: 911111203}
 --- !u!1 &112365778
 GameObject:
   m_ObjectHideFlags: 0
@@ -16955,6 +16960,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PoleYPosition: 22.4
+  PoleScroll: 0
+  PoleScroll1: 0
+  PoleScroll2: 0
+  Bendable: 1
+  GameObjectTransform: {fileID: 911111199}
 --- !u!1 &912635914
 GameObject:
   m_ObjectHideFlags: 0
@@ -63202,6 +63212,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PoleYPosition: 0.79
+  PoleScroll: 1
+  PoleScroll1: 0
+  PoleScroll2: 0
+  Bendable: 0
+  GameObjectTransform: {fileID: 3727868625613345212}
 --- !u!23 &1250618712411727368
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64065,6 +64080,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PoleYPosition: 0.8802491
+  PoleScroll: 0
+  PoleScroll1: 1
+  PoleScroll2: 0
+  Bendable: 0
+  GameObjectTransform: {fileID: 6711738354617761628}
 --- !u!1 &3537197206539771361
 GameObject:
   m_ObjectHideFlags: 0
@@ -64407,6 +64427,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PoleYPosition: 0.8802491
+  PoleScroll: 0
+  PoleScroll1: 0
+  PoleScroll2: 1
+  Bendable: 0
+  GameObjectTransform: {fileID: 4304922597364402058}
 --- !u!23 &3955109341459058165
 MeshRenderer:
   m_ObjectHideFlags: 0
