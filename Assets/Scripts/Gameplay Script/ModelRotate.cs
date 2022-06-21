@@ -10,15 +10,12 @@ public class ModelRotate : MonoBehaviour
     public bool isRotating = false;
     private Vector2 MousePosition;
     private Vector3 baseRotation;
+    private Vector3 TemporarlyRotation;
 
-
-    /*
-    [Header("Public bools")]
-    public bool FisPressed = true;
-    public bool QisPressed = false;
-    public bool EisPressed = false;
-    public bool RisPressed = false;
-    */
+    void Start()
+    {
+        baseRotation = transform.localEulerAngles;
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,6 +23,8 @@ public class ModelRotate : MonoBehaviour
         if (Input.GetMouseButtonUp(1) && isRotating)
         {
             isRotating = false;
+            baseRotation = TemporarlyRotation;
+            Debug.Log(baseRotation);
         }
 
         if (Input.GetMouseButton(1))
@@ -34,17 +33,17 @@ public class ModelRotate : MonoBehaviour
             {
                 //Get the mouse position from the X and Y position inside of a Vector2, then it will rotate towards where the mouse is pointing
                 MousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-                baseRotation = transform.eulerAngles;
                 isRotating = true;
             }
             else
             {
-                transform.eulerAngles = baseRotation;
+                //transform.localEulerAngles = baseRotation;
                 Vector2 Distances = new Vector2( MousePosition.y - Input.mousePosition.y, MousePosition.x - Input.mousePosition.x);
                 Distances.x *= RotationSpeed;
                 Distances.y *= RotationSpeed;
-                Vector3 Rotation = new Vector3(baseRotation.x + Distances.x, baseRotation.y + Distances.y,0);
-                transform.eulerAngles = Rotation;
+                Vector3 Rotation = new Vector3(baseRotation.x + Distances.x, baseRotation.y + Distances.y, 0);
+                transform.localEulerAngles = Rotation;
+                TemporarlyRotation = Rotation;
                 //transform.Rotate((Input.GetAxis("Mouse Y") * RotationSpeed * Time.deltaTime), (Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0, Space.World);
             }
         }
