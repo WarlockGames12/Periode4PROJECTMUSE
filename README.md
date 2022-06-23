@@ -16,6 +16,6 @@
 ### Links: 
 ###### Link Trello: https://trello.com/b/lZzuqDCt/muse
 ###### Link Logboek PDF: https://github.com/WarlockGames12/Periode4PROJECTMUSE/blob/Documentatie/Logboek%20van%20deze%20periode.pdf
-######  Link Backlog PDF: Work in Progress
+######  Link Backlog PDF: https://github.com/WarlockGames12/Periode4PROJECTMUSE/blob/Documentatie/Game%20Backlog.pdf
 ###### Video Gameplay: https://youtu.be/tT9kcVlG5Xs
 
