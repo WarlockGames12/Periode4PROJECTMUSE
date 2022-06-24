@@ -13,6 +13,7 @@ public class TimerScript : MonoBehaviour
     [Header("Dont Destroy Music")]
     public GameObject DontDestroy;
     public GameObject GameOver;
+    public GameObject Timers;
 
     [Header("Play Rotation after Game is over")]
     public Animation Model;
@@ -32,6 +33,7 @@ public class TimerScript : MonoBehaviour
             if (countdown <= 0f)
             {
                 ResetGame();
+                Timers.SetActive(false);
             }
             Timer.text = Mathf.Round(countdown).ToString();
             countdown -= Time.deltaTime;

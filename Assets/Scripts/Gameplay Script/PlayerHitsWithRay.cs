@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHitsWithRay : MonoBehaviour
 {
@@ -12,11 +13,18 @@ public class PlayerHitsWithRay : MonoBehaviour
 
     [Header("Sparky for Objects: ")]
     public ShocksParticles[] ParticlesWhenDone;
-    public GameObject[] TelevisionScreens;
 
     [Header("WinScherm")]
+    public AudioSource TVOn;
     public TimerScript isRunning;
     public GameObject WinScreen;
+    public GameObject Tutorial;
+    public GameObject Timers;
+
+    [Header("Materials: ")]
+    public Material[] MaterialRepaired;
+    public GameObject[] Planes;
+
 
     [Header("Dragable")]
     public GameObject[] DragAblePole;
@@ -63,21 +71,6 @@ public class PlayerHitsWithRay : MonoBehaviour
         Hover = GameObject.Find("Hover");
         isRunning.isRunning = false;
         WinScreen.SetActive(false);
-
-        for (int i = 0; i < TelevisionScreens.Length; i++)
-        {
-            TelevisionScreens[i].SetActive(false);
-        }
-
-        for (int i = 0; i < Bendables.Length; i++)
-        {
-            BendablesTransform[i] = Bendables[i].transform;
-        }
-        for (int i = 0; i < DragAblePole.Length; i++)
-        {
-            DragAbleTransform[i] = DragAblePole[i].transform;
-        }
-       
     }
 
     // Update is called once per frame
@@ -185,26 +178,35 @@ public class PlayerHitsWithRay : MonoBehaviour
         
         if (isRotated0 && isRotated1 && isDragged)
         {
+            TVOn.Play();
             ParticlesWhenDone[1].ParticlesWontShock = true;
             ParticlesWhenDone[5].ParticlesWontShock = true;
-            TelevisionScreens[1].SetActive(true);
-            TelevisionScreens[4].SetActive(true);
+            Planes[2].GetComponent<MeshRenderer>().material = MaterialRepaired[4];
+            Planes[3].GetComponent<MeshRenderer>().material = MaterialRepaired[4];
+            Planes[8].GetComponent<MeshRenderer>().material = MaterialRepaired[3];
+            Planes[9].GetComponent<MeshRenderer>().material = MaterialRepaired[3];
         }
 
         if (isRotated2 && isOnRightPlace1)
         {
+            TVOn.Play();
             ParticlesWhenDone[0].ParticlesWontShock = true;
-            TelevisionScreens[0].SetActive(true);
+            Planes[0].GetComponent<MeshRenderer>().material = MaterialRepaired[3];
+            Planes[1].GetComponent<MeshRenderer>().material = MaterialRepaired[3];
         }
 
         if (isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace2)
         {
+            TVOn.Play();
             ParticlesWhenDone[2].ParticlesWontShock = true;
             ParticlesWhenDone[3].ParticlesWontShock = true;
             ParticlesWhenDone[4].ParticlesWontShock = true;
-            TelevisionScreens[2].SetActive(true);
-            TelevisionScreens[3].SetActive(true);
-            TelevisionScreens[5].SetActive(true);
+            Planes[4].GetComponent<MeshRenderer>().material = MaterialRepaired[0];
+            Planes[5].GetComponent<MeshRenderer>().material = MaterialRepaired[0];
+            Planes[6].GetComponent<MeshRenderer>().material = MaterialRepaired[1];
+            Planes[7].GetComponent<MeshRenderer>().material = MaterialRepaired[1];
+            Planes[10].GetComponent<MeshRenderer>().material = MaterialRepaired[2];
+            Planes[11].GetComponent<MeshRenderer>().material = MaterialRepaired[2];
         }
 
         if (isRotated0 && isRotated1 && isRotated2 && isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace1 && isDragged && isOnRightPlace2)
@@ -223,6 +225,7 @@ public class PlayerHitsWithRay : MonoBehaviour
         Model.Play();
         isRunning.isRunning = true;
         WinScreen.SetActive(true);
+        Timers.SetActive(false);
         yield return new WaitForSeconds(Rotate);
     }
 
@@ -286,16 +289,22 @@ public class PlayerHitsWithRay : MonoBehaviour
         
 
 
-public void RestartLevel()
-{
-SceneManager.LoadScene("SampleScene");
-}
+    public void RestartLevel()
+    {
+       SceneManager.LoadScene("SampleScene");
+    }
 
-   public void BacktoMenu()
-   { 
-      SceneManager.LoadScene("Start");
-      Destroy(Hover);
-   }
+    public void BacktoMenu()
+    { 
+        SceneManager.LoadScene("Start");
+        Destroy(Hover);
+    }
+
+    public void Tutorials()
+    {
+        Tutorial.SetActive(true);
+        Time.timeScale = 0f;
+    }
 }
 
 
