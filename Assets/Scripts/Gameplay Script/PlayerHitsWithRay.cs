@@ -16,6 +16,9 @@ public class PlayerHitsWithRay : MonoBehaviour
 
     [Header("WinScherm")]
     public AudioSource TVOn;
+    public bool TV1 = true;
+    public bool TV2 = true;
+    public bool TV3 = true;
     public TimerScript isRunning;
     public GameObject WinScreen;
     public GameObject Tutorial;
@@ -178,7 +181,12 @@ public class PlayerHitsWithRay : MonoBehaviour
         
         if (isRotated0 && isRotated1 && isDragged)
         {
-            TVOn.Play();
+            
+            if (TV1)
+            {
+                TVOn.Play();
+                TV1 = false;
+            }
             ParticlesWhenDone[1].ParticlesWontShock = true;
             ParticlesWhenDone[5].ParticlesWontShock = true;
             Planes[2].GetComponent<MeshRenderer>().material = MaterialRepaired[4];
@@ -189,7 +197,11 @@ public class PlayerHitsWithRay : MonoBehaviour
 
         if (isRotated2 && isOnRightPlace1)
         {
-            TVOn.Play();
+            if (TV2)
+            {
+                TVOn.Play();
+                TV2 = false;
+            }
             ParticlesWhenDone[0].ParticlesWontShock = true;
             Planes[0].GetComponent<MeshRenderer>().material = MaterialRepaired[3];
             Planes[1].GetComponent<MeshRenderer>().material = MaterialRepaired[3];
@@ -197,7 +209,11 @@ public class PlayerHitsWithRay : MonoBehaviour
 
         if (isRotated3 && isRotated4 && isRotated5 && isOnRightPlace && isOnRightPlace2)
         {
-            TVOn.Play();
+            if (TV3)
+            {
+                TVOn.Play();
+                TV3 = false;
+            }
             ParticlesWhenDone[2].ParticlesWontShock = true;
             ParticlesWhenDone[3].ParticlesWontShock = true;
             ParticlesWhenDone[4].ParticlesWontShock = true;
